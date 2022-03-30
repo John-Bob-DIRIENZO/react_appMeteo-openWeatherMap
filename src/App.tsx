@@ -6,7 +6,7 @@ import Weather from "./Component/Weather";
 import ErrorFallback from "./Component/ErrorFallback";
 
 export default function App() {
-    const [documentTitle, setDocumentTitle] = useDocumentTitle('Settings');
+    const [documentTitle, setDocumentTitle] = useDocumentTitle('Météo');
     const [askedLocation, setAskedLocation] = useState<string>('Paris');
     const [weather, setWeather] = useState<object>({});
     const getWeatherFrom = useGetWeatherFrom();
